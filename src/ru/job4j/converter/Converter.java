@@ -16,5 +16,17 @@ public class Converter {
         double dollar = Converter.rubleToDollar(140);
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("140 rubles are " + new DecimalFormat("#.##").format(dollar) + " dollars");
+
+        System.out.println("Test");
+        int in  = 140;
+        int expected = 2;
+        int out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+
+        String outDollar = new DecimalFormat("#.##").format(Converter.rubleToDollar(in));
+        String expectedDollar = String.valueOf(2.33).replace(".", ",");
+        passed = expectedDollar.equals(outDollar);
+        System.out.println("140 rubles are 2,33. Test result : " + passed);
     }
 }
