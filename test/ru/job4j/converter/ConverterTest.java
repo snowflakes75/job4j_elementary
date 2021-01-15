@@ -14,8 +14,10 @@ public class ConverterTest {
     }
 
     @Test
-    public void whenConvert180RblThen2comma33Dlr() {
-        String expectedDollar = String.valueOf(2.33).replace(".", ",");
-        Assert.assertEquals(expectedDollar, "2,33");
+    public void whenConvert180RblThen3Dlr() {
+        int in = 180;
+        double out = Converter.rubleToDollar(in);
+        double expectedDollar = 3;
+        Assert.assertEquals(expectedDollar, out, 0.01);
     }
 }
