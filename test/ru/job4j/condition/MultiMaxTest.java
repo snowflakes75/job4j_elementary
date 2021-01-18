@@ -23,4 +23,10 @@ public class MultiMaxTest {
         int result = MultiMax.max(21, 21, 21);
         assertThat(result, is(21));
     }
+
+    @Test
+    public void whenFirst100Second100Third1Max100() {
+        int result = MultiMax.max(100, 100, 1);
+        assertThat(result, is(100));
+    }
 }
