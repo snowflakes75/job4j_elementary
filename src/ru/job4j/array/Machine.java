@@ -12,8 +12,8 @@ public class Machine {
         for (int i = 0; i < coins.length; i++) {
             while (mustReturn >= coins[i]) {
                 mustReturn = mustReturn - coins[i];
+                rsl[size] = coins[i];
                 size++;
-                rsl[i] = coins[i];
             }
         }
 
