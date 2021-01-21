@@ -19,4 +19,18 @@ public class SkipNegativeTest {
         int[][] rsl = SkipNegative.skip(in);
         assertThat(rsl, is(expect));
     }
+
+    @Test
+    public void skipWhenRowMore() {
+        int[][] in = {
+                {1, -2, -3},
+                {1, 2, -3}
+        };
+        int[][] expect = {
+                {1, 0, 0},
+                {1, 2, 0}
+        };
+        int[][] rsl = SkipNegative.skip(in);
+        assertThat(rsl, is(expect));
+    }
 }
