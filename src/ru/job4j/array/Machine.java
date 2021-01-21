@@ -10,11 +10,11 @@ public class Machine {
 
         int mustReturn = money - price;
         for (int i = 0; i < coins.length; i++) {
-            while (mustReturn % coins[i] > 0) {
+            while (mustReturn >= coins[i]) {
                 mustReturn = mustReturn - coins[i];
                 size++;
-             }
-            rsl[i] = coins[i];
+                rsl[i] = coins[i];
+            }
         }
 
         return Arrays.copyOf(rsl, size);
