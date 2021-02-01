@@ -1,6 +1,14 @@
 package ru.job4j.condition;
 
+/**
+ * Вернет число относительно дня недели
+ */
 public class MultipleSwitchWeek {
+    /**
+     *
+     * @param name - день недели
+     * @return число хар день недели
+     */
     public int numberOfDay(String name) {
         return switch (name) {
             case "Понедельник", "Monday" -> 1;

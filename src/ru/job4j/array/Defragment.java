@@ -1,10 +1,17 @@
 package ru.job4j.array;
 
+/**
+ *
+ */
 public class Defragment {
+    /**
+     *
+     * @param array - массив, который необходимо "сжать"
+     * @return вернет сжатый массив
+     */
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                /* переместить первую не null ячейку. Нужен цикл. */
                 for (int i = index + 1; i < array.length; i++) {
                     if (array[i] != null) {
                         swap(array, index, i);
@@ -18,6 +25,12 @@ public class Defragment {
         return array;
     }
 
+    /**
+     *
+     * @param arr - массив для сжатия
+     * @param nullIndex - индекс для null значения
+     * @param notNullIndex - индекс для не нулевого массива
+     */
     public static void swap(String[] arr, int nullIndex, int notNullIndex) {
         String temp = arr[nullIndex];
         arr[nullIndex] = arr[notNullIndex];

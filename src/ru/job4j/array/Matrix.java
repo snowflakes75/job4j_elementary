@@ -1,6 +1,14 @@
 package ru.job4j.array;
 
+/**
+ * Класс выводящий таблицу умножения
+ */
 public class Matrix {
+    /**
+     * Генерирует таблицу умножения
+     * @param size - размерной таблицы
+     * @return - таблицу умножения
+     */
     public static int[][] multiple(int size) {
         int[][] table = new int[size][size];
         for (int i = 0; i < table.length; i++) {

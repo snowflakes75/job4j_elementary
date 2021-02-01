@@ -1,5 +1,8 @@
 package ru.job4j.condition;
 
+/**
+ * Класс для сравнение двух чисел
+ */
 public class Liken {
     public static void main(String[] args) {
         int first = 10;

@@ -2,13 +2,26 @@ package ru.job4j.converter;
 
 import java.text.DecimalFormat;
 
+/**
+ * Класс конвертора валют
+ */
 public class Converter {
+    /**
+     * Конвертер валюты рубли в евро
+     * @param value - кол-во рублей
+     * @return кол-во евро
+     */
     public static int rubleToEuro(int value) {
         return value / 70;
     }
 
+    /**
+     * Конвертер валюты рубли в доллары
+     * @param value - кол-во рублей
+     * @return кол-во долларов
+     */
     public static double rubleToDollar(int value) {
-        return (double) value / 60; /* формула перевода рублей в доллары. */
+        return (double) value / 60;
     }
 
     public static void main(String[] args) {

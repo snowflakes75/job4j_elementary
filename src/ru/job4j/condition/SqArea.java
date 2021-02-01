@@ -1,6 +1,15 @@
 package ru.job4j.condition;
 
+/**
+ * Вычисление площади прямоугольника
+ */
 public class SqArea {
+    /**
+     *
+     * @param p - периметр
+     * @param k - длина
+     * @return вернет прощадь прямоугольника
+     */
     public static double square(int p, int k) {
         double h = (double) p / (2 * (k + 1));
         double length = h * k;

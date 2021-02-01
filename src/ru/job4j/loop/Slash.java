@@ -1,11 +1,18 @@
 package ru.job4j.loop;
 
+/**
+ * Отрисовка креста в консоли
+ */
 public class Slash {
+    /**
+     * метод рисование креста
+     * @param size размер креста
+     */
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = row == cell; /* добавить условие, по которому нужно определить ставить ли символ или нет. */
-                boolean right = (row + cell) == size - 1; /* добавить условие, что нужно ставить элемент в правый угол. */
+                boolean left = row == cell;
+                boolean right = (row + cell) == size - 1;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {

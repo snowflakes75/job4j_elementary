@@ -1,5 +1,8 @@
 package ru.job4j.array;
 
+/**
+ * Класс показывающий работу с циклами в массиве
+ */
 public class ArrayLoop {
     public static void main(String[] args) {
         int[] numbers = new int[5];

@@ -1,10 +1,23 @@
 package ru.job4j.calculator;
 
+/**
+ * Класс для расчета идеального веса человека
+ */
 public class Fit {
+    /**
+     * Рассчет идеального веса мужчины
+     * @param height - рост
+     * @return вернет вес для заданного роста
+     */
     public static double manWeight(short height) {
         return (height - 100) * 1.15;
     }
 
+    /**
+     * Рассчет идеального веса женщины
+     * @param height - рост
+     * @return вернет вес для заданного роста
+     */
     public static double womanWeight(short height) {
         return (height - 110) * 1.15;
     }

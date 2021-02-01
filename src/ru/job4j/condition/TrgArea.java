@@ -1,6 +1,16 @@
 package ru.job4j.condition;
 
+/**
+ * Класс для вычесления площади треугольника
+ */
 public class TrgArea {
+    /**
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return вернет площадь треугольника
+     */
     public static double area(double a, double b, double c) {
         double p = (a + b + c) / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));

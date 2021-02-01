@@ -1,6 +1,17 @@
 package ru.job4j.calculator;
 
+/**
+ * Класс для расчета квадратного корня
+ */
 public class X2 {
+    /**
+     *
+     * @param a - a
+     * @param b - b
+     * @param c - c
+     * @param x - x
+     * @return вернет квадратный корень уровнения
+     */
     public static int calc(int a, int b, int c, int x) {
         return a * x * x + b * x + c;
     }

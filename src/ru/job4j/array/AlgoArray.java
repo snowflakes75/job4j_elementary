@@ -1,6 +1,17 @@
 package ru.job4j.array;
 
+/**
+ * Класс для сортировки массива
+ *
+ * @author snowflakes75
+ * @version 1
+ */
 public class AlgoArray {
+    /**
+     * Сортировка массива методом пузырька
+     *
+     * @param arr - входной массив, который необходимо отсортировать
+     */
     public static void bubbleSort(int[] arr) {
         int out, in;
         for (out = arr.length - 1; out > 1; out--) {
@@ -16,12 +27,10 @@ public class AlgoArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{5, 3, 2, 1, 4};
-        int temp = array[0]; /* переменная для временного хранения значение ячейки с индексом 0. */
-        array[0] = array[3]; /* записываем в ячейку с индексом 0 значение ячейки с индексом 3. */
-        array[3] = temp; /* записываем в ячейку с индексом 3 значение временной переменной. */
-
+        int temp = array[0];
+        array[0] = array[3];
+        array[3] = temp;
         AlgoArray.bubbleSort(array);
-
         for (int i : array) {
             System.out.println(i);
         }

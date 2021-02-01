@@ -1,6 +1,13 @@
 package ru.job4j.condition;
 
+/**
+ * Класс для проверки доступа к фильму
+ */
 public class Cinema {
+    /**
+     * Допуск по возросту
+     * @param age - возвраст
+     */
     public static void access(int age) {
         System.out.println("The age of the customer is : " + age);
         if (age >= 18) {
@@ -10,6 +17,11 @@ public class Cinema {
         }
     }
 
+    /**
+     * Допуск по разрешению родителей и наличие денег
+     * @param allowByParent - разрешение родителей
+     * @param hasMoney - наличие денег
+     */
     public static void permission(boolean allowByParent, boolean hasMoney) {
         if (allowByParent && hasMoney) {
             System.out.println("I can go to the cinema.");
@@ -22,7 +34,6 @@ public class Cinema {
         Cinema.access(21);
         Cinema.access(16);
         System.out.println();
-        //4.3.1. Оператор && [#447922]
         permission(true, true);
         permission(true, false);
         permission(false, true);

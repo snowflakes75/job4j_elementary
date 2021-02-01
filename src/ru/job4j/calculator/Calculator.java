@@ -1,5 +1,8 @@
 package ru.job4j.calculator;
 
+/**
+ * Калькулятор. сложение, вычитание и умножение
+ */
 public class Calculator {
     public static void main(String[] args) {
         int one = 1;
